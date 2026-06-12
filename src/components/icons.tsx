@@ -33,6 +33,14 @@ export const SparklesIcon = (p: IconProps) => (
   </svg>
 )
 
+export const BanknoteIcon = (p: IconProps) => (
+  <svg {...defaults} {...p}>
+    <rect x="2" y="6" width="20" height="12" rx="2" />
+    <circle cx="12" cy="12" r="2.5" />
+    <path d="M6 12h.01M18 12h.01" />
+  </svg>
+)
+
 export const WalletIcon = (p: IconProps) => (
   <svg {...defaults} {...p}>
     <path d="M19 7V5a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-2" />

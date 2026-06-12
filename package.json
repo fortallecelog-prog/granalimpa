@@ -1,7 +1,10 @@
 {
   "name": "grana-limpa",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
+  "description": "Educador financeiro que faz um diagnóstico rápido das suas finanças e sugere próximos passos.",
+  "author": "Gabriel Medeiros Couto",
+  "license": "MIT",
   "type": "module",
   "scripts": {
     "dev": "vite",
