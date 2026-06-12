@@ -1,0 +1,91 @@
+@import 'tailwindcss';
+
+/* Habilita dark mode por classe (.dark no <html>) em vez de prefers-color-scheme */
+@custom-variant dark (&:where(.dark, .dark *));
+
+/* ---------- Design Tokens (light) ---------- */
+@layer base {
+  :root {
+    --bg: #f5f7f6;
+    --surface: #ffffff;
+    --surface-2: #f1f5f3;
+    --content: #0f1a14;
+    --muted: #5b6b62;
+    --border: #e3e9e5;
+    --brand: #16a34a;
+    --brand-strong: #15803d;
+    --brand-fg: #ffffff;
+    --brand-soft: #dcfce7;
+    --good: #16a34a;
+    --warn: #d97706;
+    --danger: #dc2626;
+    --ring: rgba(22, 163, 74, 0.35);
+  }
+
+  .dark {
+    --bg: #0b0f0d;
+    --surface: #131a16;
+    --surface-2: #1a231e;
+    --content: #ecf3ef;
+    --muted: #93a59b;
+    --border: #233029;
+    --brand: #22c55e;
+    --brand-strong: #16a34a;
+    --brand-fg: #04140a;
+    --brand-soft: rgba(34, 197, 94, 0.14);
+    --good: #34d399;
+    --warn: #fbbf24;
+    --danger: #f87171;
+    --ring: rgba(34, 197, 94, 0.4);
+  }
+
+  html {
+    color-scheme: light;
+  }
+  html.dark {
+    color-scheme: dark;
+  }
+
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--content);
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  * {
+    border-color: var(--border);
+  }
+}
+
+/* ---------- Mapeia tokens -> utilitários do Tailwind ---------- */
+@theme inline {
+  --color-bg: var(--bg);
+  --color-surface: var(--surface);
+  --color-surface-2: var(--surface-2);
+  --color-content: var(--content);
+  --color-muted: var(--muted);
+  --color-border: var(--border);
+  --color-brand: var(--brand);
+  --color-brand-strong: var(--brand-strong);
+  --color-brand-fg: var(--brand-fg);
+  --color-brand-soft: var(--brand-soft);
+  --color-good: var(--good);
+  --color-warn: var(--warn);
+  --color-danger: var(--danger);
+
+  --font-sans: 'Inter', system-ui, 'Segoe UI', Roboto, sans-serif;
+}
+
+/* Transição suave ao alternar tema */
+@layer base {
+  body,
+  .theme-transition * {
+    transition:
+      background-color 0.2s ease,
+      border-color 0.2s ease,
+      color 0.2s ease;
+  }
+}
