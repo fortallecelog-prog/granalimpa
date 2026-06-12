@@ -1,6 +1,5 @@
 import { NavLink, Link } from 'react-router-dom'
 import { ThemeToggle } from './ThemeToggle'
-import { BanknoteIcon } from './icons'
 
 const links = [
   { to: '/', label: 'Início', end: true },
@@ -13,9 +12,7 @@ export function Header() {
     <header className="sticky top-0 z-20 border-b border-border bg-bg/80 backdrop-blur">
       <div className="mx-auto flex h-16 max-w-5xl items-center justify-between gap-4 px-4">
         <Link to="/" className="flex items-center gap-2 font-extrabold text-content">
-          <span className="flex h-9 w-9 items-center justify-center rounded-xl bg-brand text-brand-fg">
-            <BanknoteIcon width={18} height={18} />
-          </span>
+          <img src="/favicon.svg" alt="Grana Limpa" className="h-9 w-9" />
           <span className="text-lg tracking-tight">
             Grana <span className="text-brand">Limpa</span>
           </span>
