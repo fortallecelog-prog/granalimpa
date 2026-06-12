@@ -1,26 +1,27 @@
 import { Button } from '../components/Button'
 import {
+  ActivityIcon,
   AlertIcon,
   ArrowRightIcon,
-  HistoryIcon,
+  ChatIcon,
+  ClipboardListIcon,
   SparklesIcon,
-  WalletIcon,
 } from '../components/icons'
 import { hasGeminiKey } from '../services/gemini'
 
 const features = [
   {
-    icon: WalletIcon,
+    icon: ClipboardListIcon,
     title: 'Simulação em etapas',
     text: 'Responda algumas perguntas simples sobre renda, gastos, dívidas e objetivos.',
   },
   {
-    icon: SparklesIcon,
+    icon: ActivityIcon,
     title: 'Diagnóstico com IA',
     text: 'A IA analisa seus números e gera um diagnóstico, recomendações e próximos passos.',
   },
   {
-    icon: HistoryIcon,
+    icon: ChatIcon,
     title: 'Histórico e chat',
     text: 'Tudo fica salvo no seu navegador. Volte quando quiser e tire dúvidas com a IA.',
   },

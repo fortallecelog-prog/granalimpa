@@ -33,6 +33,26 @@ export const SparklesIcon = (p: IconProps) => (
   </svg>
 )
 
+export const ClipboardListIcon = (p: IconProps) => (
+  <svg {...defaults} {...p}>
+    <path d="M9 5H7a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2h-2" />
+    <rect x="9" y="3" width="6" height="4" rx="1" />
+    <path d="M9 12h6M9 16h4" />
+  </svg>
+)
+
+export const ActivityIcon = (p: IconProps) => (
+  <svg {...defaults} {...p}>
+    <path d="M22 12h-4l-3 9L9 3l-3 9H2" />
+  </svg>
+)
+
+export const ChatIcon = (p: IconProps) => (
+  <svg {...defaults} {...p}>
+    <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z" />
+  </svg>
+)
+
 export const BanknoteIcon = (p: IconProps) => (
   <svg {...defaults} {...p}>
     <rect x="2" y="6" width="20" height="12" rx="2" />
