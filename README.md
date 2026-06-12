@@ -37,10 +37,6 @@ npm install
 npm run dev
 ```
 
-A configuração da IA é opcional. Se quiser ligar o Gemini, gere uma chave gratuita no
-[Google AI Studio](https://aistudio.google.com/apikey), copie o `.env.example` para
-`.env` e cole a chave em `VITE_GEMINI_API_KEY`. Sem isso, o modo offline assume.
-
 ## Organização do código
 
 ```
